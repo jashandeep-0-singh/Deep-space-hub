@@ -1,9 +1,10 @@
 /* =========================================================
    DEEP SPACE HUB — Stylesheet
    HTML5 + CSS3 only (Flexbox, Grid, Media Queries)
+   Yeh poori website ki styling is ek file mein hai
    ========================================================= */
 
-/* ---------- Design tokens ---------- */
+/* ---------- Design tokens — Yeh variables hain jo poori site mein colors, fonts aur sizes control karte hain ---------- */
 :root{
   --bg:            #060912;
   --bg-soft:       #0b1024;
@@ -28,6 +29,7 @@
   --radius-sm:     8px;
 }
 
+/* Agar user ne animations off ki hain OS mein, toh yeh sab animations band kar deta hai */
 @media (prefers-reduced-motion: reduce){
   *, *::before, *::after{
     animation-duration: 0.001ms !important;
@@ -37,7 +39,7 @@
   }
 }
 
-/* ---------- Reset ---------- */
+/* ---------- Reset — Browser ke default styles hata ke sab consistent banata hai ---------- */
 *, *::before, *::after{ box-sizing: border-box; }
 html{ scroll-behavior: smooth; }
 body{
@@ -64,6 +66,7 @@ p{ margin: 0; }
   border-radius: 4px;
 }
 
+/* Container — content ko center mein rakhta hai aur max-width set karta hai */
 .container{
   width: 100%;
   max-width: var(--max-w);
@@ -71,6 +74,7 @@ p{ margin: 0; }
   padding: 0 24px;
 }
 
+/* Eyebrow — choti si cyan color ki label jo section heading ke upar dikhti hai (jaise "Quick facts") */
 .eyebrow{
   display: inline-flex;
   align-items: center;
@@ -90,7 +94,7 @@ p{ margin: 0; }
   box-shadow: 0 0 8px var(--cyan);
 }
 
-/* ---------- Starfield (fixed ambient background) ---------- */
+/* ---------- Starfield — CSS se bana hua animated space background, radial-gradient se stars banayi hain ---------- */
 .starfield{
   position: fixed;
   inset: 0;
@@ -138,7 +142,7 @@ p{ margin: 0; }
   pointer-events: none;
 }
 
-/* ---------- Signature element: orbiting system ---------- */
+/* ---------- Orbit animation — Homepage pe planet aur satellite ka ghoomta hua animation, pure CSS se bana hai ---------- */
 .orbit-rig{
   position: relative;
   width: 100%;
@@ -193,7 +197,7 @@ p{ margin: 0; }
   box-shadow: 0 0 12px var(--cyan), 0 0 26px var(--cyan);
 }
 
-/* ---------- Navbar ---------- */
+/* ---------- Navbar — Top pe sticky navigation bar, backdrop-filter se blur effect, mobile mein hamburger menu ---------- */
 .nav{
   position: sticky;
   top: 0;
@@ -275,7 +279,7 @@ p{ margin: 0; }
 .nav-burger span:nth-child(2){ top: 10px; }
 .nav-burger span:nth-child(3){ top: 20px; }
 
-/* ---------- Buttons ---------- */
+/* ---------- Buttons — Do type ke buttons hain: Primary (blue filled) aur Ghost (transparent border wala) ---------- */
 .btn{
   display: inline-flex;
   align-items: center;
@@ -304,7 +308,7 @@ p{ margin: 0; }
 .btn-ghost:hover{ border-color: var(--cyan); background: rgba(125,211,252,0.06); }
 .btn-row{ display: flex; gap: 14px; flex-wrap: wrap; }
 
-/* ---------- Page hero (shared shell) ---------- */
+/* ---------- Page hero — Har page ke top pe heading section, planets/missions/gallery sab mein same structure hai ---------- */
 .page-hero{
   padding: 64px 0 56px;
   border-bottom: 1px solid var(--line);
@@ -322,7 +326,7 @@ p{ margin: 0; }
   font-size: 17px;
 }
 
-/* ---------- Home hero ---------- */
+/* ---------- Home hero — Sirf homepage ka bada hero section jisme heading, text aur orbit animation hai ---------- */
 .hero{
   padding: 56px 0 40px;
   display: grid;
@@ -348,7 +352,7 @@ p{ margin: 0; }
 }
 .hero .btn-row{ margin-top: 32px; }
 
-/* ---------- Section shell ---------- */
+/* ---------- Section shell — Har content section ka common padding aur heading style ---------- */
 .section{ padding: 80px 0; }
 .section-head{
   display: flex;
@@ -367,7 +371,7 @@ p{ margin: 0; }
   max-width: 440px;
 }
 
-/* ---------- Fact / stat cards ---------- */
+/* ---------- Fact cards — Homepage pe Earth, Mars aur ISS ke fact cards, 3 column grid mein ---------- */
 .fact-grid{
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -414,7 +418,7 @@ p{ margin: 0; }
   color: var(--text-faint);
 }
 
-/* ---------- Mission spotlight / alternating rows ---------- */
+/* ---------- Mission rows — Missions page pe alternating layout, ek row mein text left image right, next mein ulta ---------- */
 .mission-row{
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -463,7 +467,7 @@ p{ margin: 0; }
 }
 
 
-/* ---------- Planet cards ---------- */
+/* ---------- Planet cards — 4 column grid mein 8 planet cards, har card mein photo, naam aur facts hain ---------- */
 .planet-grid{
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -517,7 +521,7 @@ p{ margin: 0; }
 
 
 
-/* ---------- Gallery ---------- */
+/* ---------- Gallery — 3 column grid mein space images, hover pe zoom effect, neeche label text hai ---------- */
 .gallery-grid{
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -562,7 +566,7 @@ p{ margin: 0; }
   transition: transform 0.5s ease;
 }
 
-/* Mission image inside .mission-visual */
+/* Mission image — mission-visual box ke andar actual photo, object-fit:cover se properly fit hoti hai */
 .mission-image{
   position: relative;
   z-index: 1;
@@ -571,7 +575,7 @@ p{ margin: 0; }
   object-fit: cover;
 }
 
-/* ---------- Contact ---------- */
+/* ---------- Contact — Team members ka card style, contact page pe use hota hai ---------- */
 .contact-grid{
   display: grid;
   grid-template-columns: 1fr 1.1fr;
@@ -593,7 +597,7 @@ p{ margin: 0; }
 
 
 
-/* ---------- Footer ---------- */
+/* ---------- Footer — Page ke neeche 3 column grid mein brand, site links aur team members ---------- */
 .footer{
   border-top: 1px solid var(--line);
   padding: 52px 0 32px;
@@ -621,7 +625,7 @@ p{ margin: 0; }
 .footer ul a:hover{ color: var(--cyan); }
 
 
-/* ---------- Entrance animation ---------- */
+/* ---------- Entrance animation — Cards jab page load hota hai toh neeche se upar aate hain with fade-in effect ---------- */
 @keyframes rise{
   from{ opacity: 0; transform: translateY(16px); }
   to{ opacity: 1; transform: translateY(0); }
@@ -639,7 +643,9 @@ p{ margin: 0; }
 .planet-grid .planet-card:nth-child(8){ animation-delay: 0.35s; }
 
 /* =========================================================
-   Responsive
+   Responsive — Alag alag screen sizes ke liye layout adjust hota hai
+   Bade screen pe 4 columns, chhote pe 2 ya 1 column
+   Mobile mein hamburger menu dikhta hai
    ========================================================= */
 @media (max-width: 980px){
   .hero{ grid-template-columns: 1fr; }

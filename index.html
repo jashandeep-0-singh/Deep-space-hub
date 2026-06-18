@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 
+<!-- Yeh head section hai — yahan page ka title, description, favicon, Google Fonts aur CSS file link ki gayi hai -->
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -18,16 +19,21 @@
 
 <body>
 
+  <!-- Yeh starfield background hai — CSS se animated stars banayi gayi hain jo space jaisa feel deti hain -->
   <div class="starfield"></div>
   <div class="starfield-glow"></div>
 
+  <!-- Navigation bar — website ka top menu jisme logo aur saare page links hain -->
   <header class="nav">
     <div class="container nav-inner">
+      <!-- Brand logo aur naam -->
       <a href="index.html" class="brand">
         <img src="images/logo-nav.png" alt="Deep Space Hub logo">
         <span>Deep Space Hub<span class="sub">EXPLORE BEYOND LIMITS</span></span>
       </a>
+      <!-- Mobile menu ke liye checkbox toggle — bina JavaScript ke menu open/close hota hai -->
       <input type="checkbox" id="navToggle" class="nav-toggle">
+      <!-- Navigation links — saare pages ke links yahan hain -->
       <ul class="nav-links">
         <li><a href="index.html" class="active">Home</a></li>
         <li><a href="planets.html">Planets</a></li>
@@ -35,21 +41,26 @@
         <li><a href="gallery.html">Gallery</a></li>
         <li><a href="contact.html">Contact</a></li>
       </ul>
+      <!-- Hamburger icon — mobile view mein 3 lines dikhti hain menu ke liye -->
       <label for="navToggle" class="nav-burger" aria-label="Toggle menu"><span></span><span></span><span></span></label>
     </div>
   </header>
 
+  <!-- Main content shuru hota hai yahan se -->
   <main>
 
+    <!-- Hero section — page ka sabse pehla bada section jisme heading, description aur buttons hain -->
     <section class="hero container">
       <div>
         <h1>The universe, <span class="accent">We explored.</span></h1>
         <p class="lede">Explore the planets, discover the satellites orbiting Earth, and learn about the missions that continue to reveal the wonders of our universe.</p>
+        <!-- Do buttons — ek planets page pe le jaata hai, doosra missions page pe -->
         <div class="btn-row">
           <a href="planets.html" class="btn btn-primary">Start exploring</a>
           <a href="missions.html" class="btn btn-ghost">View missions</a>
         </div>
       </div>
+      <!-- Orbit animation — CSS se bana hua planet aur satellite jo orbit mein ghoomta hai -->
       <div class="orbit-rig" aria-hidden="true">
         <div class="orbit-planet"></div>
         <div class="orbit-ring"></div>
@@ -59,6 +70,7 @@
       </div>
     </section>
 
+    <!-- Quick Facts section — Earth, Mars aur ISS ke baare mein important facts dikhata hai -->
     <section class="section container">
       <div class="section-head">
         <div>
@@ -66,7 +78,9 @@
           <h2>Three worlds worth knowing</h2>
         </div>
       </div>
+      <!-- Fact cards ka grid — teen cards hain Earth, Mars aur ISS ke liye -->
       <div class="fact-grid">
+        <!-- Earth card ke facts -->
         <article class="fact-card">
           <span class="tag">Home world</span>
           <h3>Earth</h3>
@@ -78,6 +92,7 @@
             <div><b>1</b><span>Moon</span></div>
           </div>
         </article>
+        <!-- Mars card ke facts -->
         <article class="fact-card">
           <span class="tag">The red planet</span>
           <h3>Mars</h3>
@@ -89,6 +104,7 @@
             <div><b>687d</b><span>Year length</span></div>
           </div>
         </article>
+        <!-- ISS card — International Space Station ke facts -->
         <article class="fact-card">
           <span class="tag">Orbiting outpost</span>
           <h3>ISS</h3>
@@ -103,8 +119,10 @@
       </div>
     </section>
 
+    <!-- Apollo 11 Mission spotlight — homepage pe ek featured mission dikhata hai with image -->
     <section class="section container" style="padding-top:0;">
       <div class="mission-row" style="border-bottom:none; padding-bottom:0;">
+        <!-- Mission ka text content — heading aur description -->
         <div class="mission-copy">
           <h2>Apollo 11 — JULY 1969</h2>
           <p>Apollo 11 carried Neil Armstrong, Buzz Aldrin, and Michael Collins to the Moon, where Armstrong and Aldrin
@@ -114,6 +132,7 @@
             <a href="missions.html" class="btn btn-primary">See all missions</a>
           </div>
         </div>
+        <!-- Mission ki image — grid overlay ke upar actual photo dikhayi gayi hai -->
         <div class="mission-visual">
           <div class="grid-overlay"></div>
           <img src="images/apollo11.jpg" alt="Apollo 11 Mission" class="mission-image">
@@ -123,8 +142,10 @@
 
   </main>
 
+  <!-- Footer section — page ke neeche brand info, site links aur team members hain -->
   <footer class="footer container">
     <div class="footer-grid">
+      <!-- Footer brand — logo aur website ka naam -->
       <div>
         <div class="footer-brand">
           <img src="images/logo.png" alt="Deep Space Hub logo">
@@ -134,6 +155,7 @@
           </div>
         </div>
       </div>
+      <!-- Site navigation links — footer mein bhi saare page links hain -->
       <div>
         <h4>Site</h4>
         <ul>
@@ -143,6 +165,7 @@
           <li><a href="contact.html">Contact</a></li>
         </ul>
       </div>
+      <!-- Team members ki list — project mein kaam karne wale saare members -->
       <div>
         <h4>Team members</h4>
         <ul>

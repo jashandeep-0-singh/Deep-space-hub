@@ -1,5 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
+
+<!-- Yeh head section hai — page ka title, description, favicon, Google Fonts aur CSS link -->
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -13,15 +15,18 @@
 </head>
 <body>
 
+<!-- Starfield background — animated stars jo space feel deti hain -->
 <div class="starfield"></div>
 <div class="starfield-glow"></div>
 
+<!-- Navigation bar — website ka top menu -->
 <header class="nav">
   <div class="container nav-inner">
     <a href="index.html" class="brand">
       <img src="images/logo-nav.png" alt="Deep Space Hub logo">
       <span>Deep Space Hub<span class="sub">EXPLORE BEYOND LIMITS</span></span>
     </a>
+    <!-- Mobile menu toggle -->
     <input type="checkbox" id="navToggle" class="nav-toggle">
     <ul class="nav-links">
       <li><a href="index.html">Home</a></li>
@@ -34,27 +39,33 @@
   </div>
 </header>
 
+<!-- Main content start -->
 <main>
+  <!-- Page hero — missions page ka intro heading aur description -->
   <section class="page-hero container">
     <span class="eyebrow">Mission log</span>
     <h1>Four missions that matters.</h1>
     <p class="lede">Each one pushed the boundary of where humans, or our machines, had been — from the first footprint on another world to a telescope looking back almost to the beginning of time. Ordered by launch date.</p>
   </section>
 
+  <!-- Missions section — char important space missions ka detail with photos -->
   <section class="section container" style="padding-top:0;">
 
+    <!-- Mission 1: Apollo 11 — pehli baar insaan Chand pe gaya -->
     <div class="mission-row">
       <div class="mission-copy">
         <span class="date">01 · JULY 1969 · NASA</span>
         <h3>Apollo 11</h3>
         <p>The mission that landed Neil Armstrong and Buzz Aldrin on the Moon while Michael Collins orbited above. It proved, for the first time, that humans could leave Earth, walk on another world, and return safely — a goal the United States had committed to just eight years earlier.</p>
       </div>
+      <!-- Mission ki image — grid overlay ke saath actual photo -->
       <div class="mission-visual">
         <div class="grid-overlay"></div>
         <img src="images/apollo11.jpg" alt="Apollo 11 Mission" class="mission-image">
       </div>
     </div>
 
+    <!-- Mission 2: Voyager 1 — pehla human-made object jo interstellar space mein gaya -->
     <div class="mission-row reverse">
       <div class="mission-copy">
         <span class="date">02 · SEPTEMBER 1977 · NASA</span>
@@ -67,6 +78,7 @@
       </div>
     </div>
 
+    <!-- Mission 3: Hubble Space Telescope — 30+ saal se universe ki photos le raha hai -->
     <div class="mission-row">
       <div class="mission-copy">
         <span class="date">03 · APRIL 1990 · NASA / ESA</span>
@@ -79,6 +91,7 @@
       </div>
     </div>
 
+    <!-- Mission 4: James Webb Space Telescope — Hubble ka successor, infrared se purani galaxies dekhta hai -->
     <div class="mission-row reverse">
       <div class="mission-copy">
         <span class="date">04 · DECEMBER 2021 · NASA / ESA / CSA</span>
@@ -93,8 +106,10 @@
   </section>
 </main>
 
+<!-- Footer — brand info, site links aur team members -->
 <footer class="footer container">
   <div class="footer-grid">
+    <!-- Footer brand -->
     <div>
       <div class="footer-brand">
         <img src="images/logo.png" alt="Deep Space Hub logo">
@@ -104,6 +119,7 @@
         </div>
       </div>
     </div>
+    <!-- Site links -->
     <div>
       <h4>Site</h4>
       <ul>
@@ -113,6 +129,7 @@
         <li><a href="contact.html">Contact</a></li>
       </ul>
     </div>
+    <!-- Team members -->
     <div>
       <h4>Team members</h4>
       <ul>

@@ -1,32 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
 
+<!-- Yeh head section hai — yahan page ka title, description, favicon, Google Fonts aur CSS file link ki gayi hai -->
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Planets — Deep Space Hub</title>
-  <meta name="description"
-    content="Explore the eight planets of our solar system — size, distance, moons, and key facts.">
-  <link rel="icon" type="image/png" href="images/favicon.png">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link
-    href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap"
-    rel="stylesheet">
-  <link rel="stylesheet" href="css/style.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Planets — Deep Space Hub</title>
+<meta name="description"
+  content="Explore the eight planets of our solar system — size, distance, moons, and key facts.">
+<link rel="icon" type="image/png" href="images/favicon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link
+  href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap"
+  rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
 
+  <!-- Starfield background — animated stars jo space jaisa feel deti hain -->
   <div class="starfield"></div>
   <div class="starfield-glow"></div>
 
+  <!-- Navigation bar — website ka top menu jisme logo aur page links hain -->
   <header class="nav">
     <div class="container nav-inner">
       <a href="index.html" class="brand">
         <img src="images/logo-nav.png" alt="Deep Space Hub logo">
         <span>Deep Space Hub<span class="sub">EXPLORE BEYOND LIMITS</span></span>
       </a>
+      <!-- Mobile menu toggle — bina JS ke checkbox se kaam karta hai -->
       <input type="checkbox" id="navToggle" class="nav-toggle">
       <ul class="nav-links">
         <li><a href="index.html">Home</a></li>
@@ -39,7 +43,9 @@
     </div>
   </header>
 
+  <!-- Main content start -->
   <main>
+    <!-- Page hero — planets page ka intro section with heading aur description -->
     <section class="page-hero container">
       <span class="eyebrow">The solar system</span>
       <h1>Eight planets, one shared star.</h1>
@@ -47,9 +53,11 @@
         retired Pluto in 2006. Ordered by distance from the Sun, closest first.</p>
     </section>
 
+    <!-- Planet cards section — 8 planets ka grid jisme har ek ka photo, naam aur facts hain -->
     <section class="section container">
       <div class="planet-grid">
 
+        <!-- Mercury — Sun ke sabse kareeb wala planet -->
         <article class="planet-card">
           <span class="order">01 · CLOSEST TO THE SUN</span>
           <img src="images/mercury.jpeg" alt="Mercury" class="planet-sphere">
@@ -62,6 +70,7 @@
           </div>
         </article>
 
+        <!-- Venus — sabse garam planet, morning aur evening star bhi kehte hain -->
         <article class="planet-card">
           <span class="order">02 · MORNING &amp; EVENING STAR</span>
           <img src="images/venus.jpeg" alt="Venus" class="planet-sphere">
@@ -75,6 +84,7 @@
           </div>
         </article>
 
+        <!-- Earth — hamari dharti, akeli planet jahan paani aur life hai -->
         <article class="planet-card">
           <span class="order">03 · HOME WORLD</span>
           <img src="images/earth.jpeg" alt="Earth" class="planet-sphere">
@@ -87,6 +97,7 @@
           </div>
         </article>
 
+        <!-- Mars — laal greh, future mein yahan insaan rehne ki planning hai -->
         <article class="planet-card">
           <span class="order">04 · THE RED PLANET</span>
           <img src="images/mars.jpg" alt="Mars" class="planet-sphere">
@@ -99,6 +110,7 @@
           </div>
         </article>
 
+        <!-- Jupiter — solar system ka sabse bada planet -->
         <article class="planet-card">
           <span class="order">05 · THE GIANT</span>
           <img src="images/jupiter.jpg" alt="Jupiter" class="planet-sphere">
@@ -111,6 +123,7 @@
           </div>
         </article>
 
+        <!-- Saturn — rings wala famous planet -->
         <article class="planet-card">
           <span class="order">06 · THE RINGED ONE</span>
           <img src="images/saturn.jpg" alt="Saturn" class="planet-sphere">
@@ -123,6 +136,7 @@
           </div>
         </article>
 
+        <!-- Uranus — yeh tircha ghoomta hai, ice giant hai -->
         <article class="planet-card">
           <span class="order">07 · THE TILTED ICE GIANT</span>
           <img src="images/Uranus.jpg" alt="Uranus" class="planet-sphere">
@@ -135,6 +149,7 @@
           </div>
         </article>
 
+        <!-- Neptune — Sun se sabse door, sabse tez hawa wala planet -->
         <article class="planet-card">
           <span class="order">08 · FARTHEST FROM THE SUN</span>
           <img src="images/neptune.jpg" alt="Neptune" class="planet-sphere">
@@ -151,8 +166,10 @@
     </section>
   </main>
 
+  <!-- Footer — page ke neeche brand info, site links aur team members -->
   <footer class="footer container">
     <div class="footer-grid">
+      <!-- Footer brand logo aur naam -->
       <div>
         <div class="footer-brand">
           <img src="images/logo.png" alt="Deep Space Hub logo">
@@ -162,6 +179,7 @@
           </div>
         </div>
       </div>
+      <!-- Site links — footer mein navigation -->
       <div>
         <h4>Site</h4>
         <ul>
@@ -171,6 +189,7 @@
           <li><a href="contact.html">Contact</a></li>
         </ul>
       </div>
+      <!-- Team members — project mein kaam karne waale log -->
       <div>
         <h4>Team members</h4>
         <ul>
