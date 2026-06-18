@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Gallery — Deep Space Hub</title>
+<meta name="description" content="A visual gallery of nebulae, galaxies, star clusters, and other deep space sights, rendered in pure CSS.">
+<link rel="icon" type="image/png" href="images/favicon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<div class="starfield"></div>
+<div class="starfield-glow"></div>
+
+<header class="nav">
+  <div class="container nav-inner">
+    <a href="index.html" class="brand">
+      <img src="images/logo-nav.png" alt="Deep Space Hub logo">
+      <span>Deep Space Hub<span class="sub">EXPLORE BEYOND LIMITS</span></span>
+    </a>
+    <input type="checkbox" id="navToggle" class="nav-toggle">
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="planets.html">Planets</a></li>
+      <li><a href="missions.html">Missions</a></li>
+      <li><a href="gallery.html" class="active">Gallery</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+    <label for="navToggle" class="nav-burger" aria-label="Toggle menu"><span></span><span></span><span></span></label>
+  </div>
+</header>
+
+<main>
+  <section class="page-hero container">
+    <span class="eyebrow">Visual log</span>
+    <h1>Sights from the deep field.</h1>
+    <p class="lede">Six scenes from across the universe — rendered entirely in CSS gradients rather than photographs, so the page stays fast, self-contained, and free of any licensing concerns.</p>
+  </section>
+
+  <section class="section container" style="padding-top:0;">
+    <div class="gallery-grid">
+
+      <figure class="gallery-tile">
+        <div class="art art-nebula"></div>
+        <div class="label">Emission Nebula<small>Glowing clouds of ionised gas</small></div>
+      </figure>
+
+      <figure class="gallery-tile">
+        <div class="art art-galaxy"></div>
+        <div class="label">Spiral Galaxy<small>Billions of stars in rotation</small></div>
+      </figure>
+
+      <figure class="gallery-tile">
+        <div class="art art-cluster"></div>
+        <div class="label">Star Cluster<small>A dense gathering of young stars</small></div>
+      </figure>
+
+      <figure class="gallery-tile">
+        <div class="art art-aurora"></div>
+        <div class="label">Aurora Borealis<small>Solar wind meeting Earth's field</small></div>
+      </figure>
+
+      <figure class="gallery-tile">
+        <div class="art art-eclipse"></div>
+        <div class="label">Solar Eclipse<small>The Moon's shadow crossing the Sun</small></div>
+      </figure>
+
+      <figure class="gallery-tile">
+        <div class="art art-comet"></div>
+        <div class="label">Comet Pass<small>Ice and dust lit by sunlight</small></div>
+      </figure>
+
+    </div>
+  </section>
+</main>
+
+<footer class="footer container">
+  <div class="footer-grid">
+    <div>
+      <div class="footer-brand">
+        <img src="images/logo.png" alt="Deep Space Hub logo">
+        <div>
+          <div class="name">Deep Space Hub</div>
+          <div class="tag">EXPLORE BEYOND LIMITS</div>
+        </div>
+      </div>
+      </div>
+    <div>
+      <h4>Site</h4>
+      <ul>
+        <li><a href="planets.html">Planets</a></li>
+        <li><a href="missions.html">Missions</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+    <div>
+      <h4>Project</h4>
+      <ul>
+        <li>Jashandeep Singh</li>
+        <li>Khushi</li>
+        <li>Himakshi Sharma</li>
+        <li>Japleen Kaur</li>
+        <li>Khushi pandey</li>
+      </ul>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>

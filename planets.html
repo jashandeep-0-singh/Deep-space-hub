@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Planets — Deep Space Hub</title>
+<meta name="description" content="Explore the eight planets of our solar system — size, distance, moons, and key facts.">
+<link rel="icon" type="image/png" href="images/favicon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<div class="starfield"></div>
+<div class="starfield-glow"></div>
+
+<header class="nav">
+  <div class="container nav-inner">
+    <a href="index.html" class="brand">
+      <img src="images/logo-nav.png" alt="Deep Space Hub logo">
+      <span>Deep Space Hub<span class="sub">EXPLORE BEYOND LIMITS</span></span>
+    </a>
+    <input type="checkbox" id="navToggle" class="nav-toggle">
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="planets.html" class="active">Planets</a></li>
+      <li><a href="missions.html">Missions</a></li>
+      <li><a href="gallery.html">Gallery</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+    <label for="navToggle" class="nav-burger" aria-label="Toggle menu"><span></span><span></span><span></span></label>
+  </div>
+</header>
+
+<main>
+  <section class="page-hero container">
+    <span class="eyebrow">The solar system</span>
+    <h1>Eight planets, one shared star.</h1>
+    <p class="lede">Every planet here orbits the Sun, and nothing else, which is the modern definition that quietly retired Pluto in 2006. Ordered by distance from the Sun, closest first.</p>
+  </section>
+
+  <section class="section container">
+    <div class="planet-grid">
+
+      <article class="planet-card">
+        <span class="order">01 · CLOSEST TO THE SUN</span>
+        <div class="planet-sphere sphere-mercury"></div>
+        <h3>Mercury</h3>
+        <p>A scorched, cratered world with almost no atmosphere to hold in heat.</p>
+        <div class="facts">
+          <div><span>Diameter</span><b>4,879 km</b></div>
+          <div><span>Day length</span><b>59 d</b></div>
+          <div><span>Moons</span><b>0</b></div>
+        </div>
+      </article>
+
+      <article class="planet-card">
+        <span class="order">02 · MORNING &amp; EVENING STAR</span>
+        <div class="planet-sphere sphere-venus"></div>
+        <h3>Venus</h3>
+        <p>Thick clouds of sulfuric acid trap heat, making it the hottest planet despite not being closest to the Sun.</p>
+        <div class="facts">
+          <div><span>Diameter</span><b>12,104 km</b></div>
+          <div><span>Surface temp</span><b>465°C</b></div>
+          <div><span>Moons</span><b>0</b></div>
+        </div>
+      </article>
+
+      <article class="planet-card">
+        <span class="order">03 · HOME WORLD</span>
+        <div class="planet-sphere sphere-earth"></div>
+        <h3>Earth</h3>
+        <p>The only planet known to host liquid water on its surface and life of any kind.</p>
+        <div class="facts">
+          <div><span>Diameter</span><b>12,742 km</b></div>
+          <div><span>Day length</span><b>24 h</b></div>
+          <div><span>Moons</span><b>1</b></div>
+        </div>
+      </article>
+
+      <article class="planet-card">
+        <span class="order">04 · THE RED PLANET</span>
+        <div class="planet-sphere sphere-mars"></div>
+        <h3>Mars</h3>
+        <p>Iron oxide dust gives Mars its colour. Dry riverbeds hint at a wetter past.</p>
+        <div class="facts">
+          <div><span>Diameter</span><b>6,779 km</b></div>
+          <div><span>Year length</span><b>687 d</b></div>
+          <div><span>Moons</span><b>2</b></div>
+        </div>
+      </article>
+
+      <article class="planet-card">
+        <span class="order">05 · THE GIANT</span>
+        <div class="planet-sphere sphere-jupiter"></div>
+        <h3>Jupiter</h3>
+        <p>The largest planet in the solar system, with a storm — the Great Red Spot — wider than Earth.</p>
+        <div class="facts">
+          <div><span>Diameter</span><b>139,820 km</b></div>
+          <div><span>Day length</span><b>9.9 h</b></div>
+          <div><span>Moons</span><b>95+</b></div>
+        </div>
+      </article>
+
+      <article class="planet-card">
+        <span class="order">06 · THE RINGED ONE</span>
+        <div class="planet-sphere sphere-saturn"></div>
+        <h3>Saturn</h3>
+        <p>Famous for its rings made of ice and rock, some pieces as small as dust and others the size of houses.</p>
+        <div class="facts">
+          <div><span>Diameter</span><b>116,460 km</b></div>
+          <div><span>Year length</span><b>29.5 yr</b></div>
+          <div><span>Moons</span><b>140+</b></div>
+        </div>
+      </article>
+
+      <article class="planet-card">
+        <span class="order">07 · THE TILTED ICE GIANT</span>
+        <div class="planet-sphere sphere-uranus"></div>
+        <h3>Uranus</h3>
+        <p>Rotates almost on its side, so each pole gets 42 years of continuous sunlight, then 42 years of dark.</p>
+        <div class="facts">
+          <div><span>Diameter</span><b>50,724 km</b></div>
+          <div><span>Year length</span><b>84 yr</b></div>
+          <div><span>Moons</span><b>27+</b></div>
+        </div>
+      </article>
+
+      <article class="planet-card">
+        <span class="order">08 · FARTHEST FROM THE SUN</span>
+        <div class="planet-sphere sphere-neptune"></div>
+        <h3>Neptune</h3>
+        <p>Windiest planet in the solar system, with storms clocked at over 2,000 km/h.</p>
+        <div class="facts">
+          <div><span>Diameter</span><b>49,244 km</b></div>
+          <div><span>Year length</span><b>165 yr</b></div>
+          <div><span>Moons</span><b>14+</b></div>
+        </div>
+      </article>
+
+    </div>
+  </section>
+</main>
+
+<footer class="footer container">
+  <div class="footer-grid">
+    <div>
+      <div class="footer-brand">
+        <img src="images/logo.png" alt="Deep Space Hub logo">
+        <div>
+          <div class="name">Deep Space Hub</div>
+          <div class="tag">EXPLORE BEYOND LIMITS</div>
+        </div>
+      </div>
+    </div>
+    <div>
+      <h4>Site</h4>
+      <ul>
+        <li><a href="planets.html">Planets</a></li>
+        <li><a href="missions.html">Missions</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+    <div>
+      <h4>Project</h4>
+      <ul>
+        <li>Jashandeep Singh</li>
+        <li>Khushi</li>
+        <li>Himakshi Sharma</li>
+        <li>Japleen Kaur</li>
+        <li>Khushi pandey</li>
+      </ul>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
