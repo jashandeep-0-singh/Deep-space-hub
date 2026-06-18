@@ -1,160 +1,171 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Deep Space Hub — Explore Beyond Limits</title>
-<meta name="description" content="Deep Space Hub is an educational website about planets, satellites, and the missions that took us there.">
-<link rel="icon" type="image/png" href="images/favicon.png">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="css/style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Deep Space Hub — Explore Beyond Limits</title>
+  <meta name="description"
+    content="Deep Space Hub is an educational website about planets, satellites, and the missions that took us there.">
+  <link rel="icon" type="image/png" href="images/favicon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
 
-<div class="starfield"></div>
-<div class="starfield-glow"></div>
+  <div class="starfield"></div>
+  <div class="starfield-glow"></div>
 
-<header class="nav">
-  <div class="container nav-inner">
-    <a href="index.html" class="brand">
-      <img src="images/logo-nav.png" alt="Deep Space Hub logo">
-      <span>Deep Space Hub<span class="sub">EXPLORE BEYOND LIMITS</span></span>
-    </a>
-    <input type="checkbox" id="navToggle" class="nav-toggle">
-    <ul class="nav-links">
-      <li><a href="index.html" class="active">Home</a></li>
-      <li><a href="planets.html">Planets</a></li>
-      <li><a href="missions.html">Missions</a></li>
-      <li><a href="gallery.html">Gallery</a></li>
-      <li><a href="contact.html">Contact</a></li>
-    </ul>
-    <label for="navToggle" class="nav-burger" aria-label="Toggle menu"><span></span><span></span><span></span></label>
-  </div>
-</header>
-
-<main>
-
-  <section class="hero container">
-    <div>
-      <span class="eyebrow">Educational space portal</span>
-      <h1>Explore the universe, <span class="accent">one orbit at a time.</span></h1>
-      <p class="lede">Deep Space Hub is a learning resource built for students and the curious — covering the eight planets, the satellites that watch over Earth, and the missions that pushed past the edge of what we knew.</p>
-      <div class="btn-row">
-        <a href="planets.html" class="btn btn-primary">Start exploring</a>
-        <a href="missions.html" class="btn btn-ghost">View missions</a>
-      </div>
-    </div>
-    <div class="orbit-rig" aria-hidden="true">
-      <div class="orbit-planet"></div>
-      <div class="orbit-ring"></div>
-      <div class="orbit-sat-wrap">
-        <div class="orbit-sat"><span></span></div>
-      </div>
-    </div>
-  </section>
-
-  <section class="section container">
-    <div class="section-head">
-      <div>
-        <span class="eyebrow">Quick facts</span>
-        <h2>Three worlds worth knowing</h2>
-      </div>
-      <p>A snapshot of the planet we call home, the planet we dream of reaching next, and the outpost orbiting between them.</p>
-    </div>
-    <div class="fact-grid">
-      <article class="fact-card">
-        <span class="tag">Home world</span>
-        <h3>Earth</h3>
-        <p>The only known planet with liquid water on its surface, a breathable atmosphere, and life — as far as we've discovered.</p>
-        <div class="stat">
-          <div><b>71%</b><span>Surface water</span></div>
-          <div><b>24h</b><span>Rotation</span></div>
-          <div><b>1</b><span>Moon</span></div>
-        </div>
-      </article>
-      <article class="fact-card">
-        <span class="tag">The red planet</span>
-        <h3>Mars</h3>
-        <p>Iron oxide gives Mars its rust-red colour. Evidence of ancient riverbeds makes it the leading candidate for future human settlement.</p>
-        <div class="stat">
-          <div><b>2</b><span>Moons</span></div>
-          <div><b>−63°C</b><span>Avg. temp</span></div>
-          <div><b>687d</b><span>Year length</span></div>
-        </div>
-      </article>
-      <article class="fact-card">
-        <span class="tag">Orbiting outpost</span>
-        <h3>ISS</h3>
-        <p>The International Space Station has hosted a continuous human presence since 2000, built and run by five space agencies working together.</p>
-        <div class="stat">
-          <div><b>408km</b><span>Altitude</span></div>
-          <div><b>92min</b><span>Per orbit</span></div>
-          <div><b>15+</b><span>Nations</span></div>
-        </div>
-      </article>
-    </div>
-  </section>
-
-  <section class="section container" style="padding-top:0;">
-    <div class="section-head">
-      <div>
-        <span class="eyebrow">Mission spotlight</span>
-        <h2>Apollo 11 — the first footprint</h2>
-      </div>
-      <p>One mission, chosen from five, that changed how humanity measured distance.</p>
-    </div>
-    <div class="mission-row" style="border-bottom:none; padding-bottom:0;">
-      <div class="mission-copy">
-        <span class="date">JULY 1969 · NASA</span>
-        <h3>A quarter million miles, then a single step</h3>
-        <p>Apollo 11 carried Neil Armstrong, Buzz Aldrin, and Michael Collins to the Moon, where Armstrong and Aldrin became the first humans to walk on another world. The landing fulfilled a goal NASA had chased for the entire decade, and it remains the benchmark every later mission is measured against.</p>
-        <div class="btn-row">
-          <a href="missions.html" class="btn btn-primary">See all missions</a>
-        </div>
-      </div>
-      <div class="mission-visual">
-        <div class="grid-overlay"></div>
-        <div class="craft craft-apollo"></div>
-      </div>
-    </div>
-  </section>
-
-</main>
-
-<footer class="footer container">
-  <div class="footer-grid">
-    <div>
-      <div class="footer-brand">
-        <img src="images/logo.png" alt="Deep Space Hub logo">
-        <div>
-          <div class="name">Deep Space Hub</div>
-          <div class="tag">EXPLORE BEYOND LIMITS</div>
-        </div>
-      </div>
-     </div>
-    <div>
-      <h4>Site</h4>
-      <ul>
+  <header class="nav">
+    <div class="container nav-inner">
+      <a href="index.html" class="brand">
+        <img src="images/logo-nav.png" alt="Deep Space Hub logo">
+        <span>Deep Space Hub<span class="sub">EXPLORE BEYOND LIMITS</span></span>
+      </a>
+      <input type="checkbox" id="navToggle" class="nav-toggle">
+      <ul class="nav-links">
+        <li><a href="index.html" class="active">Home</a></li>
         <li><a href="planets.html">Planets</a></li>
         <li><a href="missions.html">Missions</a></li>
         <li><a href="gallery.html">Gallery</a></li>
-        <li><a href="contact.html">Contact</a></li>
       </ul>
+      <label for="navToggle" class="nav-burger" aria-label="Toggle menu"><span></span><span></span><span></span></label>
     </div>
-    <div>
-      <h4>Team members</h4>
-      <ul>
-        <li>Jashandeep Singh</li>
-        <li>Khushi</li>
-        <li>Himakshi Sharma</li>
-        <li>Japleen Kaur</li>
-        <li>Khushi pandey</li>
-      </ul>
+  </header>
+
+  <main>
+
+    <section class="hero container">
+      <div>
+        <span class="eyebrow">Educational space portal</span>
+        <h1>Explore the universe, <span class="accent">one orbit at a time.</span></h1>
+        <p class="lede">Deep Space Hub is a learning resource built for students and the curious — covering the eight
+          planets, the satellites that watch over Earth, and the missions that pushed past the edge of what we knew.</p>
+        <div class="btn-row">
+          <a href="planets.html" class="btn btn-primary">Start exploring</a>
+          <a href="missions.html" class="btn btn-ghost">View missions</a>
+        </div>
+      </div>
+      <div class="orbit-rig" aria-hidden="true">
+        <div class="orbit-planet"></div>
+        <div class="orbit-ring"></div>
+        <div class="orbit-sat-wrap">
+          <div class="orbit-sat"><span></span></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section container">
+      <div class="section-head">
+        <div>
+          <span class="eyebrow">Quick facts</span>
+          <h2>Three worlds worth knowing</h2>
+        </div>
+        <p>A snapshot of the planet we call home, the planet we dream of reaching next, and the outpost orbiting between
+          them.</p>
+      </div>
+      <div class="fact-grid">
+        <article class="fact-card">
+          <span class="tag">Home world</span>
+          <h3>Earth</h3>
+          <p>The only known planet with liquid water on its surface, a breathable atmosphere, and life — as far as we've
+            discovered.</p>
+          <div class="stat">
+            <div><b>71%</b><span>Surface water</span></div>
+            <div><b>24h</b><span>Rotation</span></div>
+            <div><b>1</b><span>Moon</span></div>
+          </div>
+        </article>
+        <article class="fact-card">
+          <span class="tag">The red planet</span>
+          <h3>Mars</h3>
+          <p>Iron oxide gives Mars its rust-red colour. Evidence of ancient riverbeds makes it the leading candidate for
+            future human settlement.</p>
+          <div class="stat">
+            <div><b>2</b><span>Moons</span></div>
+            <div><b>−63°C</b><span>Avg. temp</span></div>
+            <div><b>687d</b><span>Year length</span></div>
+          </div>
+        </article>
+        <article class="fact-card">
+          <span class="tag">Orbiting outpost</span>
+          <h3>ISS</h3>
+          <p>The International Space Station has hosted a continuous human presence since 2000, built and run by five
+            space agencies working together.</p>
+          <div class="stat">
+            <div><b>408km</b><span>Altitude</span></div>
+            <div><b>92min</b><span>Per orbit</span></div>
+            <div><b>15+</b><span>Nations</span></div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="section container" style="padding-top:0;">
+      <div class="section-head">
+        <div>
+          <span class="eyebrow">Mission spotlight</span>
+          <h2>Apollo 11 — the first footprint</h2>
+        </div>
+        <p>One mission, chosen from five, that changed how humanity measured distance.</p>
+      </div>
+      <div class="mission-row" style="border-bottom:none; padding-bottom:0;">
+        <div class="mission-copy">
+          <span class="date">JULY 1969 · NASA</span>
+          <h3>A quarter million miles, then a single step</h3>
+          <p>Apollo 11 carried Neil Armstrong, Buzz Aldrin, and Michael Collins to the Moon, where Armstrong and Aldrin
+            became the first humans to walk on another world. The landing fulfilled a goal NASA had chased for the
+            entire decade, and it remains the benchmark every later mission is measured against.</p>
+          <div class="btn-row">
+            <a href="missions.html" class="btn btn-primary">See all missions</a>
+          </div>
+        </div>
+        <div class="mission-visual">
+          <div class="grid-overlay"></div>
+          <div class="craft craft-apollo"></div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer container">
+    <div class="footer-grid">
+      <div>
+        <div class="footer-brand">
+          <img src="images/logo.png" alt="Deep Space Hub logo">
+          <div>
+            <div class="name">Deep Space Hub</div>
+            <div class="tag">EXPLORE BEYOND LIMITS</div>
+          </div>
+        </div>
+      </div>
+      <div>
+        <h4>Site</h4>
+        <ul>
+          <li><a href="planets.html">Planets</a></li>
+          <li><a href="missions.html">Missions</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Team members</h4>
+        <ul>
+          <li>Jashandeep Singh</li>
+          <li>Khushi</li>
+          <li>Himakshi Sharma</li>
+          <li>Japleen Kaur</li>
+          <li>Khushi pandey</li>
+        </ul>
+      </div>
     </div>
-  </div>
-</footer>
+  </footer>
 
 </body>
+
 </html>
